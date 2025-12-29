@@ -4,21 +4,18 @@ Assistente pessoal inteligente para programadores.
 Ajuda com código, rotina diária, hábitos, fé e equilíbrio.
 
 Estrutura do projecto:
-```
 oreo-ia/
+│
 ├── backend/
 │   ├── main.py
 │   ├── prompt.py
 │   ├── scheduler.py
 │   ├── database.py
 │   └── requirements.txt
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── app.js
-├── .env.example
-└── README.md
-```
+│
+├── Dockerfile
+├── README.md
+└── .env.example
 
 Como correr localmente:
 1. Clona o repositório:
