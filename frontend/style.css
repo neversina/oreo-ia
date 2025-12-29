@@ -1,0 +1,46 @@
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 540px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+input {
+  width: 70%;
+}
+
+button {
+  width: 24%;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.output {
+  margin-top: 20px;
+  text-align: left;
+  background: rgba(255,255,255,0.04);
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 80px;
+}
