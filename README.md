@@ -9,4 +9,4 @@ Ajuda com:
 - Hábitos saudáveis
 - Fé, foco e equilíbrio
 
-Criada com carinho ❤️🖤
+Criada com amor e carinho ❤️🖤
