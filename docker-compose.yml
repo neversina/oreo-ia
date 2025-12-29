@@ -1,23 +1,14 @@
-version: "3.8"
-services:
-  backend:
-    build:
-      context: .
-      dockerfile: backend/Dockerfile
-    container_name: oreo_backend
-    env_file:
-      - .env
-    ports:
-      - "8000:8000"
-    restart: unless-stopped
+FROM python:3.11-slim
 
-  frontend:
-    build:
-      context: .
-      dockerfile: frontend/Dockerfile
-    container_name: oreo_frontend
-    env_file:
-      - .env
-    ports:
-      - "3000:3000"
-    restart: unless-stopped
+WORKDIR /app
+
+COPY requirements.txt /app/requirements.txt
+
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r /app/requirements.txt
+
+COPY . /app
+
+EXPOSE 8000
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]  
