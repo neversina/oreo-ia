@@ -7,7 +7,7 @@ oreo-ia/
 │   ├── database.py
 │   └── requirements.txt
 │
-├── Dockerfile   ✅
+├── Dockerfile
 ├── README.md
 └── .env.example
 
